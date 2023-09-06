@@ -1,0 +1,111 @@
+.category {
+  padding: 8rem 0;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .sidebar {
+      width: 25%;
+
+      padding: 3rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      h3 {
+        font-size: 3rem;
+        text-align: center;
+        color: #00aeef;
+        margin-bottom: 1.5rem;
+      }
+
+      .category-list {
+        li {
+          text-align: center;
+
+          border-bottom: 1px solid #ccc;
+          transition: 0.2s linear;
+
+          &:hover {
+            background-color: #00aeef;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        li a {
+          display: block;
+          padding: 1rem 0;
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: #484848;
+          transition: 0.2s linear;
+        }
+      }
+    }
+    .listing {
+      width: 75%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+      gap: 1.5rem;
+
+      .card {
+        border: 1px solid #ccc;
+        transition: 0.2s linear;
+
+        .img {
+          overflow: hidden;
+          height: 20rem;
+          img {
+            height: 100%;
+            transition: 0.2s linear;
+          }
+        }
+
+        .content {
+          padding: 1rem;
+          h5 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #00aeef;
+
+            text-transform: capitalize;
+          }
+          p {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+          }
+          .location {
+            padding-top: 1.5rem;
+            border-top: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            .left {
+              display: flex;
+              flex-direction: column;
+
+              span {
+                font-weight: 600;
+                font-size: 1.6rem;
+                color: #484848;
+              }
+
+              .title {
+                font-weight: 500 !important;
+                font-size: 14px !important;
+                color: #00aeef;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          transform: translateY(-5px);
+          .img img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

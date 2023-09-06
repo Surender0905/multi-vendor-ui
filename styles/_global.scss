@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  user-select: none;
+  position: relative;
+
+  overflow-x: hidden;
+  font-family: $font-family;
+
+  color: $black;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+
+  @include media-1200 {
+    width: 90%;
+  }
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
