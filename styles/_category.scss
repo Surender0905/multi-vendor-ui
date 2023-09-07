@@ -9,11 +9,12 @@
       width: 25%;
 
       padding: 3rem;
+      border: 1px solid $color-primary;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       h3 {
         font-size: 3rem;
         text-align: center;
-        color: #00aeef;
+        color: $color-primary;
         margin-bottom: 1.5rem;
       }
 
@@ -25,7 +26,7 @@
           transition: 0.2s linear;
 
           &:hover {
-            background-color: #00aeef;
+            background-color: $color-primary;
             a {
               color: #fff;
             }
@@ -66,7 +67,7 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 30px;
-            color: #00aeef;
+            color: $color-primary;
 
             text-transform: capitalize;
           }
@@ -83,17 +84,36 @@
               display: flex;
               flex-direction: column;
 
-              span {
-                font-weight: 600;
-                font-size: 1.6rem;
-                color: #484848;
+              a {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-size: 1.5rem;
+                background-color: $color-primary;
+                padding: 1rem 1.5rem;
+                border-radius: 0.5rem;
+                color: $white;
+                border: 1px solid $color-primary;
+                transition: all 0.2s linear;
+
+                &:hover {
+                  border: 1px solid $color-primary;
+                  color: $color-primary;
+                  background-color: transparent;
+                }
               }
 
-              .title {
-                font-weight: 500 !important;
-                font-size: 14px !important;
-                color: #00aeef;
-              }
+              // span {
+              //   font-weight: 600;
+              //   font-size: 1.6rem;
+              //   color: #484848;
+              // }
+
+              // .title {
+              //   font-weight: 500 !important;
+              //   font-size: 14px !important;
+              //   color: $color-primary;
+              // }
             }
           }
         }

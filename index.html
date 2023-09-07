@@ -27,9 +27,17 @@
     <header class="main-header">
       <div class="container flex">
         <a href="#" class="logo">
-          Brand
+          Quisell
           <!-- <img src="./images/logo.svg" alt="logo" /> -->
         </a>
+        <div class="search">
+          <form>
+            <input type="search" name="search" id="search" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
         <nav class="nav">
           <ul class="menu">
             <li class="menu-item"><a href="#" class="menu-link">Shop</a></li>
@@ -42,7 +50,9 @@
             <li class="menu-item">
               <a href="#" class="menu-link">Contact Us</a>
             </li>
-            <li><a href="#" class="login">Login</a></li>
+            <li>
+              <a href="#" class="login"><i class="fa-regular fa-user"></i></a>
+            </li>
           </ul>
 
           <div
@@ -59,146 +69,51 @@
 
     <!---banner-->
     <section class="hero">
-      <!-- Swiper -->
-
-      <div class="gallery-container">
-        <div class="swiper-container gallery-main">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="gallery-title">Vertical<br />Swiper</div>
-              <img
-                src="https://picsum.photos/seed/slide1/600/300"
-                alt="Slide 01"
-              />
+      <div class="container hero-container">
+        <div class="gallery-container">
+          <div class="swiper-container gallery-main">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery-title">Vertical<br />Swiper</div>
+                <img src="./image/camera.jpg" alt="Slide 01" />
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-title">Slide 02</div>
+                <img src="./image/coffee.jpg" alt="Slide 02" />
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-title">Slide 03</div>
+                <img src="./image/head.jpg" alt="Slide 03" />
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-title">Slide 04</div>
+                <img src="./image/nike.jpg" alt="Slide 04" />
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-title">Slide 04</div>
+                <img src="./image/wash.jpg" alt="Slide 05" />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <div class="gallery-title">Slide 02</div>
-              <img
-                src="https://picsum.photos/seed/slide2/600/300"
-                alt="Slide 02"
-              />
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery-title">Slide 03</div>
-              <img
-                src="https://picsum.photos/seed/slide3/600/300"
-                alt="Slide 03"
-              />
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery-title">Slide 04</div>
-              <img
-                src="https://picsum.photos/seed/slide4/600/300"
-                alt="Slide 04"
-              />
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery-title">Slide 04</div>
-              <img
-                src="https://picsum.photos/seed/slide5/600/300"
-                alt="Slide 05"
-              />
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery-title">Slide 06</div>
-              <img
-                src="https://picsum.photos/seed/slide6/600/300"
-                alt="Slide 06"
-              />
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery-title">Slide 07</div>
-              <img
-                src="https://picsum.photos/seed/slide7/600/300"
-                alt="Slide 07"
-              />
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery-title">Slide 08</div>
-              <img
-                src="https://picsum.photos/seed/slide8/600/300"
-                alt="Slide 08"
-              />
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery-title">Slide 09</div>
-              <img
-                src="https://picsum.photos/seed/slide9/600/300"
-                alt="Slide 09"
-              />
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery-title">Slide 10</div>
-              <img
-                src="https://picsum.photos/seed/slide10/600/300"
-                alt="Slide 10"
-              />
-            </div>
+            <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
           </div>
-          <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
-        </div>
-        <div class="swiper-container gallery-thumbs">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide1/115/100"
-                alt="Slide 01"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide2/115/100"
-                alt="Slide 02"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide3/115/100"
-                alt="Slide 03"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide4/115/100"
-                alt="Slide 04"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide5/115/100"
-                alt="Slide 05"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide6/115/100"
-                alt="Slide 06"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide7/115/100"
-                alt="Slide 07"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide8/115/100"
-                alt="Slide 08"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide9/115/100"
-                alt="Slide 09"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://picsum.photos/seed/slide10/115/100"
-                alt="Slide 10"
-              />
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./image/camera.jpg" alt="Slide 01" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/coffee.jpg" alt="Slide 02" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/head.jpg" alt="Slide 03" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/nike.jpg" alt="Slide 04" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/wash.jpg" alt="Slide 05" />
+              </div>
             </div>
           </div>
         </div>
@@ -227,15 +142,15 @@
             </div>
             <div class="content">
               <h5>New General Store</h5>
-              <p>Lorem ipsum dolor, sit amet consectetur</p>
+
               <div class="location">
                 <div class="left">
-                  <span class="title">Category</span>
-                  <span>Hardware</span>
+                  <a href="#"><i class="fa-solid fa-shop"></i> View Shop </a>
                 </div>
                 <div class="left">
-                  <span class="title">Location</span>
-                  <span>New Delhi</span>
+                  <a href="#"
+                    ><i class="fa-solid fa-location-dot"></i>Direction</a
+                  >
                 </div>
               </div>
             </div>
@@ -246,15 +161,15 @@
             </div>
             <div class="content">
               <h5>New General Store</h5>
-              <p>Lorem ipsum dolor, sit amet consectetur</p>
+
               <div class="location">
                 <div class="left">
-                  <span class="title">Category</span>
-                  <span>Hardware</span>
+                  <a href="#"><i class="fa-solid fa-shop"></i> View Shop </a>
                 </div>
                 <div class="left">
-                  <span class="title">Location</span>
-                  <span>New Delhi</span>
+                  <a href="#"
+                    ><i class="fa-solid fa-location-dot"></i>Direction</a
+                  >
                 </div>
               </div>
             </div>
@@ -266,54 +181,15 @@
             </div>
             <div class="content">
               <h5>New General Store</h5>
-              <p>Lorem ipsum dolor, sit amet consectetur</p>
-              <div class="location">
-                <div class="left">
-                  <span class="title">Category</span>
-                  <span>Hardware</span>
-                </div>
-                <div class="left">
-                  <span class="title">Location</span>
-                  <span>New Delhi</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./image/apartment-md1.png" alt="image" />
-            </div>
-            <div class="content">
-              <h5>New General Store</h5>
-              <p>Lorem ipsum dolor, sit amet consectetur</p>
-              <div class="location">
-                <div class="left">
-                  <span class="title">Category</span>
-                  <span>Hardware</span>
-                </div>
-                <div class="left">
-                  <span class="title">Location</span>
-                  <span>New Delhi</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./image/apartment-md1.png" alt="image" />
-            </div>
-            <div class="content">
-              <h5>New General Store</h5>
-              <p>Lorem ipsum dolor, sit amet consectetur</p>
 
               <div class="location">
                 <div class="left">
-                  <span class="title">Category</span>
-                  <span>Hardware</span>
+                  <a href="#"><i class="fa-solid fa-shop"></i> View Shop </a>
                 </div>
                 <div class="left">
-                  <span class="title">Location</span>
-                  <span>New Delhi</span>
+                  <a href="#"
+                    ><i class="fa-solid fa-location-dot"></i>Direction</a
+                  >
                 </div>
               </div>
             </div>
@@ -324,15 +200,53 @@
             </div>
             <div class="content">
               <h5>New General Store</h5>
-              <p>Lorem ipsum dolor, sit amet consectetur</p>
+
               <div class="location">
                 <div class="left">
-                  <span class="title">Category</span>
-                  <span>Hardware</span>
+                  <a href="#"><i class="fa-solid fa-shop"></i> View Shop </a>
                 </div>
                 <div class="left">
-                  <span class="title">Location</span>
-                  <span>New Delhi</span>
+                  <a href="#"
+                    ><i class="fa-solid fa-location-dot"></i>Direction</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./image/apartment-md1.png" alt="image" />
+            </div>
+            <div class="content">
+              <h5>New General Store</h5>
+
+              <div class="location">
+                <div class="left">
+                  <a href="#"><i class="fa-solid fa-shop"></i> View Shop </a>
+                </div>
+                <div class="left">
+                  <a href="#"
+                    ><i class="fa-solid fa-location-dot"></i>Direction</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./image/apartment-md1.png" alt="image" />
+            </div>
+            <div class="content">
+              <h5>New General Store</h5>
+
+              <div class="location">
+                <div class="left">
+                  <a href="#"><i class="fa-solid fa-shop"></i> View Shop </a>
+                </div>
+                <div class="left">
+                  <a href="#"
+                    ><i class="fa-solid fa-location-dot"></i>Direction</a
+                  >
                 </div>
               </div>
             </div>
@@ -425,7 +339,7 @@
             <div class="col">
               <div class="footer-widget">
                 <div class="footer-logo">
-                  <a href="index.html">Logo</a>
+                  <a href="index.html">Quisell</a>
                 </div>
                 <div class="footer-text">
                   <p>
@@ -496,15 +410,16 @@
       var galleryThumbs = new Swiper('.gallery-thumbs', {
         centeredSlides: true,
         centeredSlidesBounds: true,
+        spaceBetween: 10,
         slidesPerView: 3,
         watchOverflow: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         direction: 'vertical',
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 3500,
+        //   disableOnInteraction: false,
+        // },
       });
 
       var galleryMain = new Swiper('.gallery-main', {

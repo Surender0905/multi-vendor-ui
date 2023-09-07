@@ -26,7 +26,7 @@
   display: block;
   font-size: 18px;
   line-height: 24px;
-  color: #00aeef;
+  color: $color-primary;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -70,12 +70,11 @@
   font-weight: 600;
   overflow: hidden;
   letter-spacing: 0.02em;
-  background-color: #00aeef;
+  background-color: $color-primary;
 }
 
 .btn-style-one:hover {
-  background-color: #0794c9;
-  color: #ffffff;
+  opacity: 0.8;
 }
 
 .about-section .sec-title {
