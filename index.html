@@ -133,6 +133,11 @@
             <li><a href="#">Category 4</a></li>
             <li><a href="#">Category 5</a></li>
             <li><a href="#">Category 6</a></li>
+
+            <li><a href="#">Category 3</a></li>
+            <li><a href="#">Category 4</a></li>
+            <li><a href="#">Category 5</a></li>
+            <li><a href="#">Category 6</a></li>
           </ul>
         </div>
         <div class="listing">
@@ -154,6 +159,7 @@
                 </div>
               </div>
             </div>
+            <span class="type">category</span>
           </div>
           <div class="card">
             <div class="img">
@@ -173,6 +179,7 @@
                 </div>
               </div>
             </div>
+            <span class="type">category</span>
           </div>
 
           <div class="card">
@@ -193,6 +200,7 @@
                 </div>
               </div>
             </div>
+            <span class="type">category</span>
           </div>
           <div class="card">
             <div class="img">
@@ -212,6 +220,7 @@
                 </div>
               </div>
             </div>
+            <span class="type">category</span>
           </div>
           <div class="card">
             <div class="img">
@@ -231,6 +240,7 @@
                 </div>
               </div>
             </div>
+            <span class="type">category</span>
           </div>
           <div class="card">
             <div class="img">
@@ -250,6 +260,7 @@
                 </div>
               </div>
             </div>
+            <span class="type">category</span>
           </div>
         </div>
       </div>
@@ -407,7 +418,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var galleryThumbs = new Swiper('.gallery-thumbs', {
+      var galleryThumbs = new Swiper(".gallery-thumbs", {
         centeredSlides: true,
         centeredSlidesBounds: true,
         spaceBetween: 10,
@@ -415,23 +426,23 @@
         watchOverflow: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
-        direction: 'vertical',
+        direction: "vertical",
         // autoplay: {
         //   delay: 3500,
         //   disableOnInteraction: false,
         // },
       });
 
-      var galleryMain = new Swiper('.gallery-main', {
+      var galleryMain = new Swiper(".gallery-main", {
         watchOverflow: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         preventInteractionOnTransition: true,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-        effect: 'fade',
+        effect: "fade",
         fadeEffect: {
           crossFade: true,
         },
@@ -440,11 +451,11 @@
         },
       });
 
-      galleryMain.on('slideChangeTransitionStart', function () {
+      galleryMain.on("slideChangeTransitionStart", function () {
         galleryThumbs.slideTo(galleryMain.activeIndex);
       });
 
-      galleryThumbs.on('transitionStart', function () {
+      galleryThumbs.on("transitionStart", function () {
         galleryMain.slideTo(galleryThumbs.activeIndex);
       });
     </script>
