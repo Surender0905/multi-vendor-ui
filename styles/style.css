@@ -206,8 +206,8 @@ li {
 }
 
 .hero {
-  margin-top: 10rem;
-  height: calc(80vh - 10rem);
+  margin-top: 11rem;
+  height: calc(85vh - 10rem);
   overflow: hidden;
 }
 .hero-container {
@@ -418,6 +418,103 @@ li {
   border-radius: 0.5rem;
 }
 
+.service {
+  padding: 0 0 8rem;
+}
+.service span {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 24px;
+  color: #febd69;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.service h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  line-height: 1.28em;
+  width: 80%;
+  color: #222222;
+  font-weight: 600;
+  padding-bottom: 18px;
+}
+.service .slider {
+  margin-top: 3rem;
+}
+.service .slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+.service .slider .swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  transition: 0.2s linear;
+  border: 1px solid #ccc;
+}
+.service .slider .swiper .swiper-slide .img {
+  width: 100%;
+  height: 22rem;
+}
+.service .slider .swiper .swiper-slide .img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service .slider .swiper .swiper-slide h4 {
+  font-size: 2rem;
+  color: #febd69;
+}
+.service .slider .swiper .swiper-slide p {
+  width: 90%;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.service .slider .swiper .swiper-slide a {
+  width: 90%;
+  margin-top: 0 auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #febd69;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  border: 1px solid #febd69;
+  transition: all 0.2s linear;
+}
+.service .slider .swiper .swiper-slide a:hover {
+  border: 1px solid #febd69;
+  color: #febd69;
+  background-color: transparent;
+}
+.service .slider .swiper .swiper-slide:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid #febd69;
+  transform: translateY(-5px);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 4rem;
+  width: 4rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #febd69;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #febd69;
+}
+
 .about-section {
   padding: 0 0 8rem;
 }
@@ -452,7 +549,7 @@ li {
 .sec-title h2 {
   position: relative;
   display: block;
-  font-size: 40px;
+  font-size: 3.5rem;
   line-height: 1.28em;
   color: #222222;
   font-weight: 600;

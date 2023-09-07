@@ -124,6 +124,8 @@
       </div>
     </section>
 
+    <section class="slider"></section>
+
     <!---category section-->
     <section class="category">
       <div class="container flex">
@@ -265,6 +267,107 @@
               </div>
             </div>
             <span class="type">category</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----service-->
+
+    <section class="service">
+      <div class="container">
+        <span>Our Services</span>
+        <h2>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          enim, quis itaque voluptate ipsam aspernatur
+        </h2>
+        <div class="slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img">
+                  <img src="./image/camera.jpg" alt="image" />
+                </div>
+                <h4>Service Name</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequatur, repellat.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+              <div class="swiper-slide">
+                <div class="img">
+                  <img src="./image/camera.jpg" alt="image" />
+                </div>
+                <h4>Service Name</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequatur, repellat.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="img">
+                  <img src="./image/camera.jpg" alt="image" />
+                </div>
+                <h4>Service Name</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequatur, repellat.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="img">
+                  <img src="./image/camera.jpg" alt="image" />
+                </div>
+                <h4>Service Name</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequatur, repellat.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+              <div class="swiper-slide">
+                <div class="img">
+                  <img src="./image/camera.jpg" alt="image" />
+                </div>
+                <h4>Service Name</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequatur, repellat.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="img">
+                  <img src="./image/camera.jpg" alt="image" />
+                </div>
+                <h4>Service Name</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequatur, repellat.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="img">
+                  <img src="./image/camera.jpg" alt="image" />
+                </div>
+                <h4>Service Name</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequatur, repellat.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
@@ -463,6 +566,26 @@
         galleryMain.slideTo(galleryThumbs.activeIndex);
       });
     </script>
+
+    <!-- Swiper JS -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
     <!------custom js-->
     <script src="./main.js"></script>
   </body>
