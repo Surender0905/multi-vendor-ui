@@ -40,13 +40,17 @@
         </div>
         <nav class="nav">
           <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link">About Us</a>
+            </li>
             <li class="menu-item"><a href="#" class="menu-link">Shop</a></li>
             <li class="menu-item">
               <a href="#" class="menu-link">Products</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">About Us</a>
+              <a href="#" class="menu-link">Services</a>
             </li>
+
             <li class="menu-item">
               <a href="#" class="menu-link">Contact Us</a>
             </li>
@@ -418,7 +422,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var galleryThumbs = new Swiper(".gallery-thumbs", {
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
         centeredSlides: true,
         centeredSlidesBounds: true,
         spaceBetween: 10,
@@ -426,23 +430,23 @@
         watchOverflow: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
-        direction: "vertical",
+        direction: 'vertical',
         autoplay: {
           delay: 3500,
           disableOnInteraction: false,
         },
       });
 
-      var galleryMain = new Swiper(".gallery-main", {
+      var galleryMain = new Swiper('.gallery-main', {
         watchOverflow: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         preventInteractionOnTransition: true,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
-        effect: "fade",
+        effect: 'fade',
         fadeEffect: {
           crossFade: true,
         },
@@ -451,11 +455,11 @@
         },
       });
 
-      galleryMain.on("slideChangeTransitionStart", function () {
+      galleryMain.on('slideChangeTransitionStart', function () {
         galleryThumbs.slideTo(galleryMain.activeIndex);
       });
 
-      galleryThumbs.on("transitionStart", function () {
+      galleryThumbs.on('transitionStart', function () {
         galleryMain.slideTo(galleryThumbs.activeIndex);
       });
     </script>
